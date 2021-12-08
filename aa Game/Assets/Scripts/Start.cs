@@ -27,8 +27,9 @@ public class Start : MonoBehaviour
 
     void DistanceController()
     {
-        float range = Vector2.Distance(BallTransform.position, FixedBallPointTransform.position);
+        float range = Vector2.Distance(FixedBallPointTransform.position, BallTransform.position);
         Debug.Log(range);
+        Debug.Log(BallPointTransform.position);
         if (range < 0.1f)
         {
             Instantiate(FixedBallPrefab, FixedBallPointTransform.position, FixedBallPointTransform.rotation);
