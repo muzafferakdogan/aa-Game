@@ -2,38 +2,37 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Ball : MonoBehaviour
+public class Start : MonoBehaviour
 {
-    /*[SerializeField] private Transform BallPointTransform;
+    [SerializeField] private Transform BallPointTransform;
     [SerializeField] private Transform FixedBallPointTransform;
     [SerializeField] private Transform BallTransform;
     [SerializeField] private GameObject BallPrefab;
-    [SerializeField] private GameObject FixedBallPrefab;*/
-    [SerializeField] private float BallSpeed;
-
-    private void Start()
-    {
-
-    }
+    [SerializeField] private GameObject FixedBallPrefab;
+    private float range;
 
     void Update()
     {
-        MoveBall();
+        if (Input.GetButtonDown("Fire1"))
+        {
+            CreatBall();
+        }
+        DistanceController();
     }
 
-    void MoveBall()
+    void CreatBall()
     {
-        transform.position += transform.up * BallSpeed * Time.deltaTime;
+        Instantiate(BallPrefab, BallPointTransform.position, BallPointTransform.rotation);
     }
 
-    /*void DistanceController()
+    void DistanceController()
     {
         float range = Vector2.Distance(BallTransform.position, FixedBallPointTransform.position);
-
+        Debug.Log(range);
         if (range < 0.1f)
         {
             Instantiate(FixedBallPrefab, FixedBallPointTransform.position, FixedBallPointTransform.rotation);
             Destroy(BallPrefab);
         }
-    }*/
+    }
 }
