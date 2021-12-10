@@ -20,4 +20,9 @@ public class Ball : MonoBehaviour
     {
         transform.position += transform.up * BallSpeed * Time.deltaTime;
     }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        Debug.Log("carpti");
+    }
 }

@@ -22,6 +22,7 @@ public class Start : MonoBehaviour
     void CreatBall()
     {
         Instantiate(BallPrefab, BallPointTransform.position, BallPointTransform.rotation);
+        Debug.Log(BallPointTransform.position);
     }
 
     void DistanceController()

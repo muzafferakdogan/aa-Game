@@ -305,7 +305,7 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!1 &884629492
+--- !u!1 &753375202
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -313,9 +313,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 884629494}
-  - component: {fileID: 884629493}
-  - component: {fileID: 884629495}
+  - component: {fileID: 753375203}
+  - component: {fileID: 753375204}
   m_Layer: 0
   m_Name: BallPoint
   m_TagString: Untagged
@@ -323,48 +322,36 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &884629493
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 884629492}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 613485da9c2be194cbfa79b587472047, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!4 &884629494
+--- !u!4 &753375203
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 884629492}
+  m_GameObject: {fileID: 753375202}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -4.12, z: -9.963872}
+  m_LocalPosition: {x: -54.2, y: -162.6, z: -30.220745}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &884629495
+--- !u!114 &753375204
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 884629492}
+  m_GameObject: {fileID: 753375202}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecaaa0bd14507f498c3b3d484c46870, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BallPointTransform: {fileID: 884629494}
-  FixedBallPointTransform: {fileID: 1056426732}
-  BallTransform: {fileID: 639048037057459954, guid: baf86bbba1b2f3f4d970c0936011c9dd, type: 3}
-  BallPrefab: {fileID: 6566884027559394486, guid: baf86bbba1b2f3f4d970c0936011c9dd, type: 3}
+  BallPointTransform: {fileID: 968844787271907644, guid: 3993b60d12e52eb45ba4a871e500e369, type: 3}
+  FixedBallPointTransform: {fileID: 968844787271907644, guid: 3993b60d12e52eb45ba4a871e500e369, type: 3}
+  BallTransform: {fileID: 2528706941643418730, guid: 6cdb2555919fbae4d8aac759ef925a9d, type: 3}
+  BallPrefab: {fileID: 3986375871718543113, guid: 6cdb2555919fbae4d8aac759ef925a9d, type: 3}
   FixedBallPrefab: {fileID: 2736599327905769709, guid: 3993b60d12e52eb45ba4a871e500e369, type: 3}
 --- !u!1 &925191697
 GameObject:
@@ -564,7 +551,7 @@ GameObject:
   - component: {fileID: 1056426732}
   - component: {fileID: 1056426733}
   m_Layer: 0
-  m_Name: FixedBallpoint
+  m_Name: FixedBallPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -582,7 +569,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1056426733
 MonoBehaviour:
